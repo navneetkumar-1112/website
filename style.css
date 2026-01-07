@@ -1,0 +1,40 @@
+body {
+  /* 1. the reset */
+  margin: 0;
+  padding: 0;
+
+  /*2. dark mode variables */
+  background-color: #121212; /* very dark grey , better for eyes than pure black */
+  color: #ffffff; /* white text*/
+  /* 3. the font stack */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+header {
+  /* Layout */
+  text-align: center; /* Horizontally centeres the text */
+  padding: 3rem 1rem; /* 3 units of space top/bottom, 1 unit left/right */
+
+  /*Visuals */
+  border-bottom: 1px solid #333; /* A subtle separator line */
+  margin-bottom: 2rem; /* Pushes the grid away from the header */
+}
+h1 {
+  font-size: 2.5rem; /* Makes the title significantly larger */
+  font-weight: 700; /* Bold */
+  letter-spacing: -0.5px; /* Tightens text for a modern look */
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto; /* calculates height automatically */
+  display: block; /* Removes a tiny invisible gap at the bottom of the images */
+  border-radius: 8px; /* Adds the nice rounded corners modern apps use*/
+}
