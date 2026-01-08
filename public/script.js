@@ -16,3 +16,13 @@ function searchImages() {
     }
   });
 }
+
+function downloadImage(url) {
+  // Create a fake link dynamically
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "wallpaper.jpg"; // Tells browser to download
+  document.body.appendChild(link);
+  link.click(); // Click it automatically
+  document.body.removeChild(link); // Remove it immediately
+}
