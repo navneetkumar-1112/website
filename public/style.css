@@ -43,3 +43,14 @@ h1 {
 .gallery-grid img:hover {
   transform: scale(1.1);
 }
+
+#search-box {
+  display: block;
+  margin: 20px auto; /* Centers the box */
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
