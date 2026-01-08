@@ -37,4 +37,9 @@ h1 {
   height: auto; /* calculates height automatically */
   display: block; /* Removes a tiny invisible gap at the bottom of the images */
   border-radius: 8px; /* Adds the nice rounded corners modern apps use*/
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
 }
